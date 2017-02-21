@@ -1,5 +1,6 @@
 var app = angular.module("behaviorApp", []);
 
+// pass attributes(attrs) and link with the 'enter' event
 app.directive("enter", function() {
   return function(scope, element, attrs) {
     element.bind("mouseenter", function() {
