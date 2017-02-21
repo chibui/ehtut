@@ -9,6 +9,7 @@ app.controller("AppCtrl", function($scope) {
   }
 })
 
+// passing in attributes(attrs) here and binding the deleteTweets function in the view allows us to reuse this method. 
 app.directive('enter', function() {
   return function(scope, element, attrs) {
     element.bind("mouseenter", function() {
